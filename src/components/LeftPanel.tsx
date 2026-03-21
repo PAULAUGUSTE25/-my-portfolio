@@ -68,7 +68,7 @@ const LeftPanel = () => {
         {/* Bio */}
         <p className="text-[13px] leading-[1.7] mb-7"
           style={{ color: 'rgba(255,255,255,0.45)' }}>
-          Building scalable web apps for real-world impact. Currently at{' '}
+          I am <span style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 700 }}>Ndefo Paul Auguste</span>, a young guy passionate about coding. Currently studying at{' '}
           <span style={{ color: 'rgba(255,255,255,0.75)', fontWeight: 600 }}>ICT University</span>{' '}
           and open to new opportunities.
         </p>
@@ -81,10 +81,7 @@ const LeftPanel = () => {
             { icon: Phone, text: '+237 695 584 290', href: 'tel:+237695584290' },
           ].map(({ icon: Icon, text, href }) => (
             <div key={text} className="flex items-center gap-3">
-              <div className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: 'rgba(255,255,255,0.06)' }}>
-                <Icon className="w-3.5 h-3.5" style={{ color: 'rgba(255,255,255,0.5)' }} />
-              </div>
+              <Icon className="w-3.5 h-3.5 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.4)' }} />
               {href ? (
                 <a href={href} className="text-xs font-medium hover:underline truncate"
                   style={{ color: 'rgba(255,255,255,0.55)' }}>
