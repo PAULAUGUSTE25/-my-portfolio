@@ -28,7 +28,7 @@ const deliveredProjects = [
   },
   {
     name: 'My ENEO',
-    desc: 'Full customer portal — billing, meter readings, outage reports',
+    desc: 'Functional testing, bug reporting and tracking',
     img: '/img/my-eneo-logo.png',
     bg: '/img/back ground image for eneo.jpeg',
     color: '#047857',
@@ -312,6 +312,7 @@ const ExperienceSection = () => {
                   <div>
                     <h3 className="text-xl font-black text-white leading-tight">{t('exp.bachelorICT')}</h3>
                     <p className="text-sm font-semibold" style={{ color: 'rgba(255,255,255,0.5)' }}>{t('exp.ictUniversity')}</p>
+                    <p className="text-[11px] mt-1" style={{ color: 'rgba(255,255,255,0.45)' }}>{t('exp.gceAdvancedLevel')}</p>
                     <div className="flex items-center gap-3 mt-1.5">
                       <span className="text-[11px]" style={{ color: 'rgba(255,255,255,0.45)' }}>
                         {t('exp.softwareEngProgram')}

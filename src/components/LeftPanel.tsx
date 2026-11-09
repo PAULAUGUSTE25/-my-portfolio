@@ -87,7 +87,7 @@ const LeftPanel = () => {
         {/* Name & title */}
         <motion.div className="mb-6" variants={fadeUp}>
           <h1 className="text-[22px] font-black text-white leading-tight tracking-tight mb-1">
-            Ndefo Paul<br />Auguste
+            Ndefo Kuate<br />Paul Auguste
           </h1>
           <div className="flex items-center gap-2 mt-2">
             <motion.span className="px-2.5 py-1 rounded-md text-[11px] font-semibold"
