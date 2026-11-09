@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
-import { ArrowUpRight } from 'lucide-react'
+import { motion, useInView } from 'framer-motion'
+import { ArrowUpRight, Globe2 } from 'lucide-react'
+import { useLang } from '../i18n'
+import HeroSlideshow from './HeroSlideshow'
 
 /* ── Animated counter hook ── */
 function useCounter(target: number, duration = 1800) {
@@ -34,27 +37,25 @@ function useCounter(target: number, duration = 1800) {
   return { count, ref }
 }
 
-/* ── Scroll reveal hook ── */
-function useScrollReveal() {
-  const ref = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { el.classList.add('visible'); obs.disconnect() } },
-      { threshold: 0.15 }
-    )
-    obs.observe(el)
-    return () => obs.disconnect()
-  }, [])
-  return ref
+/* ── Framer Motion variants ── */
+const containerVariants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
+}
+const cardVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.97 },
+  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.8, 0.25, 1] as const } },
+}
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.8, 0.25, 1] as const } },
 }
 
 interface Project {
   id: number
   title: string
-  category: string
-  description: string
+  categoryKey: 'proj1.category' | 'proj2.category' | 'proj3.category' | 'proj4.category' | 'proj5.category'
+  descriptionKey: 'proj1.description' | 'proj2.description' | 'proj3.description' | 'proj4.description' | 'proj5.description'
   tags: string[]
   gradient: string
   emoji: string
@@ -70,10 +71,24 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 4,
+    title: 'MBOA Market',
+    categoryKey: 'proj4.category',
+    descriptionKey: 'proj4.description',
+    tags: ['Marketplace', 'Agriculture', 'Cameroon'],
+    gradient: 'linear-gradient(135deg, #14532d 0%, #15803d 55%, #84cc16 100%)',
+    emoji: '🛒',
+    imgSrc: '/img/mboamarket-logo.png',
+    url: 'https://mboamarket.netlify.app/',
+    accent: '#15803d',
+    badge: '🔴 Live',
+    cols: 2,
+  },
+  {
     id: 1,
     title: '33 Export — Memory Foot',
-    category: 'Game Platform · AFCON Edition',
-    description: 'Interactive football memory card game launched during the Africa Cup of Nations. Match cards, beat the clock, and climb the leaderboard.',
+    categoryKey: 'proj1.category',
+    descriptionKey: 'proj1.description',
     tags: ['React', 'TypeScript', 'Game Dev', 'Animations'],
     gradient: 'linear-gradient(135deg, #7f0000 0%, #b91c1c 50%, #dc2626 100%)',
     emoji: '⚽',
@@ -82,18 +97,18 @@ const projects: Project[] = [
     url: 'https://33export.club/games/memoryfoot',
     accent: '#f87171',
     badge: '🔴 Live',
-    cols: 2,
+    cols: 1,
   },
   {
     id: 2,
     title: 'My ENEO',
-    category: 'Energy Management · Cameroon',
-    description: 'Full customer portal for ENEO — Cameroon\'s electricity provider. Handles billing, meter readings, outage reports and service requests.',
+    categoryKey: 'proj2.category',
+    descriptionKey: 'proj2.description',
     tags: ['React', 'Node.js', 'Full Stack', 'REST API'],
     gradient: 'linear-gradient(135deg, #1a0500 0%, #4a1500 50%, #8b3a00 100%)',
     emoji: '⚡',
     bgSrc: '/img/back ground image for eneo.jpeg',
-    imgSrc: '/img/eneo logo.png',
+    imgSrc: '/img/my-eneo-logo.png',
     url: 'https://my.eneo.cm/',
     accent: '#fbbf24',
     badge: '🔴 Live',
@@ -102,16 +117,29 @@ const projects: Project[] = [
   {
     id: 3,
     title: 'Port Authority of Douala',
-    category: 'Port Operations System',
-    description: 'Digital platform for the Port Authority of Douala streamlining logistics, vessel tracking and administrative operations.',
+    categoryKey: 'proj3.category',
+    descriptionKey: 'proj3.description',
     tags: ['JavaScript', 'Web Dev', 'Integration'],
     gradient: 'linear-gradient(135deg, #000d1a 0%, #002244 50%, #004080 100%)',
     emoji: '🚢',
-    bgSrc: '/img/poer autonome de doula back ground.jpg',
+    bgSrc: '/img/port autonome de dla back ground image .jpg',
     imgSrc: '/img/pad logo.jpg',
     url: 'https://www.pad.cm/',
     accent: '#38bdf8',
     badge: '🔴 Live',
+    cols: 1,
+  },
+  {
+    id: 5,
+    title: 'Mboa Phone Games',
+    categoryKey: 'proj5.category',
+    descriptionKey: 'proj5.description',
+    tags: ['JavaScript', 'Game Dev', 'Mobile'],
+    gradient: 'linear-gradient(135deg, #312e81 0%, #4f46e5 55%, #818cf8 100%)',
+    emoji: '🎮',
+    url: '#',
+    accent: '#6366f1',
+    badge: 'Personal Project',
     cols: 1,
   },
 ]
@@ -121,11 +149,15 @@ interface WorkGridProps {
 }
 
 const WorkGrid = ({ searchQuery }: WorkGridProps) => {
+  const { t } = useLang()
   const [hovered, setHovered] = useState<number | null>(null)
   const [scrollProgress, setScrollProgress] = useState(0)
   const [heroOffset, setHeroOffset] = useState(0)
   const scrollRef = useRef<HTMLDivElement>(null)
-  const sectionRef = useScrollReveal()
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const sectionInView = useInView(sectionRef, { once: true, margin: '-50px' })
+  const heroRef = useRef<HTMLDivElement>(null)
+  const heroInView = useInView(heroRef, { once: true })
 
   // Animated counters
   const c1 = useCounter(4)
@@ -145,105 +177,102 @@ const WorkGrid = ({ searchQuery }: WorkGridProps) => {
     return () => el.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Scroll-reveal observer for all cards
-  useEffect(() => {
-    const cards = document.querySelectorAll('.project-card')
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) }
-        })
-      },
-      { threshold: 0.12 }
-    )
-    cards.forEach((c) => obs.observe(c))
-    return () => obs.disconnect()
-  }, [searchQuery])
 
   const filtered = projects.filter(
     (p) =>
       p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      t(p.categoryKey).toLowerCase().includes(searchQuery.toLowerCase()) ||
+      t(p.descriptionKey).toLowerCase().includes(searchQuery.toLowerCase()) ||
       p.tags.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()))
   )
 
   return (
-    <div ref={scrollRef} className="h-full overflow-y-auto" style={{ background: '#f4f4f6' }}>
+    <div ref={scrollRef} className="h-full overflow-y-auto" style={{ background: '#F5F1E9' }}>
 
       {/* ── SCROLL PROGRESS BAR ── */}
       <div className="scroll-progress" style={{ width: `${scrollProgress}%` }} />
 
       {/* ── HERO BANNER ── */}
-      <div className="relative overflow-hidden" style={{ minHeight: 340 }}>
-        <img
-          src="/img/the%20hero%20banner.png"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover will-change-transform"
-          style={{ objectPosition: 'center 30%', transform: `translateY(${heroOffset}px) scale(1.1)` }}
-        />
-        <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.85) 100%)',
+      <div className="relative overflow-hidden" style={{ minHeight: 340 }} ref={heroRef}>
+        <HeroSlideshow parallaxOffset={heroOffset} />
+        <div className="absolute inset-0 z-10" style={{
+          background: 'linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.55) 50%, rgba(0,0,0,0.82) 100%)',
         }} />
 
-        <div className="relative z-10 px-8 lg:px-12 pt-12 pb-10 flex flex-col justify-end h-full" style={{ minHeight: 340 }}>
-          <p className="text-[10px] font-bold tracking-[0.3em] uppercase mb-3"
-            style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Full Stack Developer · Yaoundé, Cameroon
-          </p>
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-none tracking-tight mb-4"
-            style={{ textShadow: '0 2px 20px rgba(0,0,0,0.4)' }}>
-            Building Apps<br />That Matter.
-          </h1>
-          <p className="text-sm lg:text-base mb-6 max-w-md"
-            style={{ color: 'rgba(255,255,255,0.85)', lineHeight: 1.6 }}>
-            React &amp; TypeScript specialist. Crafting scalable web experiences for real-world impact.
-          </p>
+        <motion.div
+          className="relative z-20 px-6 sm:px-8 lg:px-12 pt-12 pb-10 flex flex-col justify-end h-full"
+          style={{ minHeight: 340 }}
+          initial="hidden"
+          animate={heroInView ? 'visible' : 'hidden'}
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1, delayChildren: 0.15 } } }}
+        >
+          <motion.div className="flex flex-wrap items-center gap-2.5 mb-3" variants={fadeIn}>
+            <p className="text-[10px] font-bold tracking-[0.2em] uppercase"
+              style={{ color: 'rgba(255,255,255,0.7)' }}>
+              {t('work.location')}
+            </p>
+            <span className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-semibold"
+              style={{ color: '#F5F1E9', background: 'rgba(216,203,184,0.18)', border: '1px solid rgba(216,203,184,0.4)' }}>
+              <Globe2 className="h-3 w-3" />
+              {t('left.languages')}
+            </span>
+          </motion.div>
+          <motion.h1 className="text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-none tracking-tight mb-4"
+            style={{ textShadow: '0 2px 20px rgba(0,0,0,0.4)' }}
+            variants={fadeIn}>
+            {t('work.headline').split('\n').map((line, i) => <span key={i}>{line}{i === 0 && <br />}</span>)}
+          </motion.h1>
+          <motion.p className="text-sm lg:text-base mb-6 max-w-md"
+            style={{ color: 'rgba(255,255,255,0.85)', lineHeight: 1.6 }}
+            variants={fadeIn}>
+            {t('work.subtitle')}
+          </motion.p>
 
-          <div className="flex flex-wrap items-center gap-3 mb-8">
-            <a href="mailto:sixcomp8@gmail.com"
-              className="px-5 py-2.5 rounded-xl text-sm font-bold text-white transition-opacity hover:opacity-80"
-              style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,0.25)' }}>
-              Hire Me
-            </a>
-            <a href="https://github.com/PAULAUGUSTE25" target="_blank" rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-xl text-sm font-bold transition-opacity hover:opacity-80"
-              style={{ background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.8)' }}>
-              GitHub ↗
-            </a>
-          </div>
+          <motion.div className="flex flex-wrap items-center gap-3 mb-8" variants={fadeIn}>
+            <motion.a href="https://github.com/PAULAUGUSTE25" target="_blank" rel="noopener noreferrer"
+              className="px-5 py-2.5 rounded-xl text-sm font-bold"
+              style={{ background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.8)' }}
+              whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
+              {t('work.github')}
+            </motion.a>
+          </motion.div>
 
-          <div className="flex gap-8">
+          <motion.div className="flex gap-8" variants={fadeIn}>
             <div ref={c1.ref}>
               <p className="text-2xl font-black text-white leading-none">{c1.count}+</p>
-              <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>Projects</p>
+              <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>{t('left.projects')}</p>
             </div>
             <div ref={c2.ref}>
               <p className="text-2xl font-black text-white leading-none">{c2.count}+</p>
-              <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>Yr Exp.</p>
+              <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>{t('left.yrExp')}</p>
             </div>
             <div ref={c3.ref}>
               <p className="text-2xl font-black text-white leading-none">{c3.count}+</p>
-              <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>Clients</p>
+              <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>{t('left.clients')}</p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
 
       {/* ── PROJECTS ── */}
-      <div ref={sectionRef} className="reveal px-6 lg:px-10 pt-7 pb-3">
-        <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-gray-400 mb-1">Selected Works</p>
-        <h2 className="text-xl lg:text-2xl font-black text-gray-900 tracking-tight">My Projects</h2>
-      </div>
+      <motion.div ref={sectionRef} className="px-6 lg:px-10 pt-7 pb-3"
+        initial={{ opacity: 0, y: 16 }}
+        animate={sectionInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5, ease: [0.25, 0.8, 0.25, 1] as const }}>
+        <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-gray-400 mb-1">{t('work.selectedWorks')}</p>
+        <h2 className="text-xl lg:text-2xl font-black text-gray-900 tracking-tight">{t('work.myProjects')}</h2>
+      </motion.div>
 
       <div className="px-6 lg:px-10 pb-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <motion.div className="grid grid-cols-1 sm:grid-cols-2 gap-5"
+          variants={containerVariants}
+          initial="hidden"
+          animate={sectionInView ? 'show' : 'hidden'}>
           {filtered.map((project) => (
-            <div
+            <motion.div
               key={project.id}
-              className={`project-card reveal stagger-${project.id} ${
-                project.cols === 2 ? 'sm:col-span-2' : ''
-              }`}
+              className={project.cols === 2 ? 'sm:col-span-2' : ''}
+              variants={cardVariants}
             >
             <a
               href={project.url !== '#' ? project.url : undefined}
@@ -351,10 +380,10 @@ const WorkGrid = ({ searchQuery }: WorkGridProps) => {
                   <ArrowUpRight className="w-4 h-4 text-gray-900" />
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 px-4 pb-4"
+                <div className="absolute bottom-0 left-0 right-0 px-4 pb-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100"
                   style={{
-                    opacity: hovered === project.id ? 1 : 0,
-                    transform: hovered === project.id ? 'translateY(0)' : 'translateY(8px)',
+                    opacity: hovered === project.id ? 1 : undefined,
+                    transform: hovered === project.id ? 'translateY(0)' : undefined,
                     transition: 'all 0.3s ease',
                   }}>
                   <div className="flex flex-wrap gap-1.5">
@@ -385,11 +414,11 @@ const WorkGrid = ({ searchQuery }: WorkGridProps) => {
                     )}
                   </h3>
                 </div>
-                <p className="text-[11px] font-medium mb-2" style={{ color: project.cardBg ? 'rgba(255,255,255,0.55)' : '#9ca3af' }}>{project.category}</p>
-                <p className="text-xs leading-relaxed line-clamp-2 mb-3" style={{ color: project.cardBg ? 'rgba(255,255,255,0.65)' : '#6b7280' }}>{project.description}</p>
+                <p className="text-[11px] font-medium mb-2" style={{ color: project.cardBg ? 'rgba(255,255,255,0.55)' : '#9ca3af' }}>{t(project.categoryKey)}</p>
+                <p className="text-xs leading-relaxed line-clamp-2 mb-3" style={{ color: project.cardBg ? 'rgba(255,255,255,0.65)' : '#6b7280' }}>{t(project.descriptionKey)}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-bold" style={{ color: project.id === 2 ? '#047857' : project.accent }}>
-                    {project.url !== '#' ? 'View live project →' : 'View case study →'}
+                    {project.url !== '#' ? t('work.viewLive') : t('work.viewCase')}
                   </span>
                   <div className="w-6 h-6 rounded-full flex items-center justify-center"
                     style={{ background: (project.id === 2 ? '#047857' : project.accent) + '22' }}>
@@ -398,16 +427,16 @@ const WorkGrid = ({ searchQuery }: WorkGridProps) => {
                 </div>
               </div>
             </a>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {filtered.length === 0 && (
         <div className="flex flex-col items-center justify-center py-24 text-gray-400">
           <span className="text-5xl mb-4">🔍</span>
-          <p className="font-semibold text-gray-500">No projects found</p>
-          <p className="text-sm mt-1">Try a different keyword</p>
+          <p className="font-semibold text-gray-500">{t('work.noProjectsFound')}</p>
+          <p className="text-sm mt-1">{t('work.tryDifferent')}</p>
         </div>
       )}
     </div>

@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import { ActiveSection } from '../App'
 import WorkGrid from './WorkGrid'
 import AboutSection from './AboutSection'
@@ -12,17 +13,26 @@ interface RightPanelProps {
 
 const RightPanel = ({ activeSection, searchQuery }: RightPanelProps) => {
   return (
-    <main className="flex-1 h-full overflow-y-auto bg-[#f5f5f5] dark:bg-[#111111]"
-      style={{ background: '#f7f7f8' }}>
+    <main className="min-w-0 flex-1 h-full overflow-y-auto"
+      style={{ background: '#F5F1E9' }}>
       <div className="md:hidden">
         <MobileHero />
       </div>
-      <div className="h-full">
-        {activeSection === 'work' && <WorkGrid searchQuery={searchQuery} />}
-        {activeSection === 'about' && <AboutSection />}
-        {activeSection === 'experience' && <ExperienceSection />}
-        {activeSection === 'contact' && <ContactSection />}
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeSection}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.35, ease: [0.25, 0.8, 0.25, 1] }}
+          className="h-full"
+        >
+          {activeSection === 'work' && <WorkGrid searchQuery={searchQuery} />}
+          {activeSection === 'about' && <AboutSection />}
+          {activeSection === 'experience' && <ExperienceSection />}
+          {activeSection === 'contact' && <ContactSection />}
+        </motion.div>
+      </AnimatePresence>
     </main>
   )
 }

@@ -11,7 +11,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const mailtoLink = `mailto:sixcomp8@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`
+    const mailtoLink = `mailto:ndefokuatepaulauguste@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`
     window.location.href = mailtoLink
   }
 
@@ -26,8 +26,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'sixcomp8@gmail.com',
-      link: 'mailto:sixcomp8@gmail.com',
+      value: 'ndefokuatepaulauguste@gmail.com',
+      link: 'mailto:ndefokuatepaulauguste@gmail.com',
     },
     {
       icon: MapPin,
@@ -107,7 +107,7 @@ const Contact = () => {
                   <Github className="w-6 h-6 text-gray-700 dark:text-gray-300" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/ndefo-paul-auguste"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg flex items-center justify-center transition-all duration-200 transform hover:scale-110"
@@ -115,7 +115,7 @@ const Contact = () => {
                   <Linkedin className="w-6 h-6 text-gray-700 dark:text-gray-300" />
                 </a>
                 <a
-                  href="mailto:sixcomp8@gmail.com"
+                  href="mailto:ndefokuatepaulauguste@gmail.com"
                   className="w-12 h-12 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg flex items-center justify-center transition-all duration-200 transform hover:scale-110"
                 >
                   <Mail className="w-6 h-6 text-gray-700 dark:text-gray-300" />

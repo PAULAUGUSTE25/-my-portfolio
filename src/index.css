@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: light;
+  --color-page: #f5f1e9;
+  --color-surface: #fffefc;
+  --color-ink: #242321;
+  --color-muted: #898680;
+  --color-sand: #d8cbb8;
+  --color-sand-light: #eee7dc;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,29 +28,67 @@ html, body, #root {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: #0a0a0a;
+  background: var(--color-page);
+  color: var(--color-ink);
 }
 
 ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--color-page);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.15);
+  background: var(--color-sand);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255,255,255,0.3);
+  background: var(--color-muted);
+}
+
+.bg-white {
+  background-color: var(--color-surface) !important;
+}
+.bg-gray-50,
+.bg-gray-100 {
+  background-color: var(--color-page) !important;
+}
+.bg-gray-200 {
+  background-color: var(--color-sand-light) !important;
+}
+.text-gray-900,
+.text-gray-800,
+.text-gray-700 {
+  color: var(--color-ink) !important;
+}
+.text-gray-600,
+.text-gray-500,
+.text-gray-400 {
+  color: var(--color-muted) !important;
+}
+
+*:focus-visible {
+ outline: 2px solid var(--color-sand);
+ outline-offset: 3px;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;
+ display: none;
 }
 .scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+ -ms-overflow-style: none;
+ scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+ *,
+ *::before,
+ *::after {
+   scroll-behavior: auto !important;
+   animation-duration: 0.01ms !important;
+   animation-iteration-count: 1 !important;
+   transition-duration: 0.01ms !important;
+ }
 }
 
 @keyframes fadeInUp {
@@ -154,7 +202,7 @@ body {
   top: 0;
   left: 0;
   height: 2px;
-  background: rgba(255,255,255,0.6);
+  background: var(--color-sand);
   z-index: 9999;
   transition: width 0.1s linear;
 }

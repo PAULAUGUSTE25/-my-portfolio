@@ -43,7 +43,7 @@ const Hero = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <a
-              href="mailto:sixcomp8@gmail.com"
+                href="mailto:ndefokuatepaulauguste@gmail.com"
               className="flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
             >
               <Mail className="w-5 h-5" />
@@ -68,7 +68,7 @@ const Hero = () => {
               <Github className="w-6 h-6 text-gray-700 dark:text-gray-300" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/ndefo-paul-auguste"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-all duration-200 transform hover:scale-110"
@@ -77,7 +77,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6 text-gray-700 dark:text-gray-300" />
             </a>
             <a
-              href="mailto:sixcomp8@gmail.com"
+                href="mailto:ndefokuatepaulauguste@gmail.com"
               className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-all duration-200 transform hover:scale-110"
               aria-label="Email"
             >
