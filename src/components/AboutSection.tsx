@@ -85,13 +85,13 @@ const AboutSection = () => {
                   <img src="/img/profile-auguste.png" alt="Ndefo Paul Auguste" className="w-full h-full object-cover" style={{ objectPosition: 'center 24%' }} />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-lg font-black text-white leading-tight">Ndefo Paul Auguste</h3>
+                  <h3 className="text-lg font-black text-white leading-tight">Ndefo Kuate Paul Auguste</h3>
                   <p className="text-sm font-semibold" style={{ color: 'rgba(255,255,255,0.5)' }}>{t('mobile.subtitle')}</p>
                   <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>Yaoundé, Cameroon</p>
                 </div>
                 <img
                   src="/img/software-engineering-graduation.png"
-                  alt="Ndefo Paul Auguste's Software Engineering graduation stole"
+                  alt="Ndefo Kuate Paul Auguste's Software Engineering graduation stole"
                   className="hidden sm:block h-20 w-16 flex-shrink-0 rounded-lg object-cover object-center"
                 />
               </div>

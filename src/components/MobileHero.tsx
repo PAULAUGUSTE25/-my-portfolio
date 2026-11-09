@@ -32,13 +32,13 @@ const MobileHero = () => {
           variants={fadeUp}
           whileTap={{ scale: 0.95 }}
           onClick={() => setLightboxOpen(true)}>
-          <img src="/img/profile-auguste.png" alt="Ndefo Paul Auguste" className="w-full h-full object-cover" style={{ objectPosition: 'center 24%' }} />
+          <img src="/img/profile-auguste.png" alt="Ndefo Kuate Paul Auguste" className="w-full h-full object-cover" style={{ objectPosition: 'center 24%' }} />
         </motion.div>
         <ProfileLightbox
           isOpen={lightboxOpen}
           onClose={() => setLightboxOpen(false)}
           src="/img/profile-auguste.png"
-          alt="Ndefo Paul Auguste"
+          alt="Ndefo Kuate Paul Auguste"
         />
         <div className="flex-1 pb-2">
           <motion.p className="text-[#D8CBB8] text-[10px] tracking-[0.18em] uppercase mb-1" variants={fadeUp}>{t('nav.portfolio')}</motion.p>

@@ -330,7 +330,7 @@ const ExperienceSection = () => {
                 <div className="mb-4 flex justify-center overflow-hidden rounded-xl bg-[#F5F1E9] p-3">
                   <img
                     src="/img/software-engineering-graduation.png"
-                    alt="Ndefo Paul Auguste's Software Engineering graduation stole"
+                    alt="Ndefo Kuate Paul Auguste's Software Engineering graduation stole"
                     className="max-h-64 w-full object-contain"
                   />
                 </div>

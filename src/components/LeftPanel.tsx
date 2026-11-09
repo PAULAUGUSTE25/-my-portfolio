@@ -63,7 +63,7 @@ const LeftPanel = () => {
             >
               <img
                 src="/img/profile-auguste.png"
-                alt="Ndefo Paul Auguste"
+                alt="Ndefo Kuate Paul Auguste"
                 className="w-full h-full object-cover"
                 style={{ objectPosition: 'center 24%' }}
               />
@@ -72,7 +72,7 @@ const LeftPanel = () => {
               isOpen={lightboxOpen}
               onClose={() => setLightboxOpen(false)}
               src="/img/profile-auguste.png"
-              alt="Ndefo Paul Auguste"
+              alt="Ndefo Kuate Paul Auguste"
             />
             {/* Online dot */}
             <motion.span

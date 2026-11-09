@@ -15,8 +15,8 @@ const translations = {
 
   // ── LEFT PANEL ──
   'left.bio': {
-    en: 'I am <b>Ndefo Paul Auguste</b>, a Full Stack Developer and Software Engineering graduate from <b>ICT University</b>, passionate about building useful digital products.',
-    fr: 'Je suis <b>Ndefo Paul Auguste</b>, développeur Full Stack et diplômé en génie logiciel de <b>ICT University</b>, passionné par la création de produits numériques utiles.',
+    en: 'I am <b>Ndefo Kuate Paul Auguste</b>, a Full Stack Developer specializing in React, TypeScript, and JavaScript, with strong experience building digital products.',
+    fr: 'Je suis <b>Ndefo Kuate Paul Auguste</b>, développeur Full Stack spécialisé en React, TypeScript et JavaScript, avec une forte expérience dans le développement de produits numériques.',
   },
   'left.languages': { en: 'Bilingual · English & French', fr: 'Bilingue · anglais et français' },
   'left.available': { en: 'Available for hire', fr: 'Disponible' },
@@ -61,12 +61,12 @@ const translations = {
   'about.heroTitle': { en: 'About Me', fr: 'À propos' },
   'about.heroSub': { en: 'Passionate developer turning ideas into scalable, real-world applications.', fr: 'Développeur passionné transformant les idées en applications concrètes et évolutives.' },
   'about.bio1': {
-    en: 'I\'m a Full Stack Developer born on <b>August 28, 2000</b> in Yaoundé, Cameroon, and a <b>Software Engineering graduate</b> from ICT University.',
-    fr: 'Je suis développeur Full Stack, né le <b>28/08/2000</b> à Yaoundé, au Cameroun, et <b>diplômé en génie logiciel</b> de ICT University.',
+    en: 'I\'m <b>Ndefo Kuate Paul Auguste</b>, a Full Stack Developer born on <b>August 28, 2000</b> in Yaoundé, Cameroon. I specialize in React, TypeScript, and JavaScript and hold a Software Engineering degree from ICT University.',
+    fr: 'Je suis <b>Ndefo Kuate Paul Auguste</b>, développeur Full Stack né le <b>28 août 2000</b> à Yaoundé, au Cameroun. Je suis spécialisé en React, TypeScript et JavaScript et titulaire d\'une licence en génie logiciel de ICT University.',
   },
   'about.bio2': {
-    en: 'My internship at <b>Zen Africa</b> allowed me to contribute to <b>My ENEO</b> through rigorous functional testing and bug tracking, and to build the <b>33 Export Memory Foot</b> game for the Africa Cup of Nations.',
-    fr: 'Mon stage chez <b>Zen Africa</b> m\'a permis de contribuer à <b>My ENEO</b> grâce à des tests fonctionnels rigoureux et au suivi des anomalies, ainsi que de créer le jeu <b>33 Export Memory Foot</b> pour la Coupe d\'Afrique des Nations.',
+    en: 'During my internship at <b>Zen Africa</b> (2025—2026), I contributed to ministry research-event data collection, performed functional testing and bug tracking for <b>My ENEO</b>, and built the <b>33 Export Memory Foot</b> game for AFCON Morocco.',
+    fr: 'Lors de mon stage chez <b>Zen Africa</b> (2025—2026), j\'ai participé à la collecte de données lors d\'un événement du ministère de la Recherche, réalisé des tests fonctionnels et suivi les anomalies de <b>My ENEO</b>, puis créé le jeu <b>33 Export Memory Foot</b> pour la CAN au Maroc.',
   },
   'about.education': { en: 'Education', fr: 'Formation' },
   'about.location': { en: 'Location', fr: 'Localisation' },
@@ -96,8 +96,8 @@ const translations = {
   'about.otherSkills': { en: 'Other Skills', fr: 'Autres compétences' },
   'about.excel': { en: 'Microsoft Excel', fr: 'Microsoft Excel' },
   'about.excelDesc': { en: 'Data analysis, pivot tables, formulas', fr: 'Analyse de données, tableaux croisés, formules' },
-  'about.driving': { en: 'Driving License', fr: 'Permis de conduire' },
-  'about.drivingDesc': { en: 'Excellent driver, category B', fr: 'Excellent conducteur, catégorie B' },
+  'about.driving': { en: 'Driving', fr: 'Conduite automobile' },
+  'about.drivingDesc': { en: 'Highly proficient car driver', fr: 'Très apte à la conduite de voiture' },
   'about.canva': { en: 'Canva', fr: 'Canva' },
   'about.canvaDesc': { en: 'Graphic design, social media visuals', fr: 'Design graphique, visuels réseaux sociaux' },
   'about.aptitudes': { en: 'Aptitudes', fr: 'Aptitudes' },
@@ -111,7 +111,7 @@ const translations = {
   'about.timeManagement': { en: 'Time Management', fr: 'Gestion du temps' },
   'about.technicalSkills': { en: 'Technical Skills', fr: 'Compétences techniques' },
   'about.university': { en: 'ICT University', fr: 'ICT University' },
-  'about.degree': { en: 'B.Sc. Software Engineering · GCE Advanced Level', fr: 'Licence en génie logiciel · GCE Advanced Level' },
+  'about.degree': { en: 'Software Engineering degree · GCE Advanced Level', fr: 'Licence en génie logiciel · GCE Advanced Level' },
   'about.city': { en: 'Yaoundé', fr: 'Yaoundé' },
   'about.country': { en: 'Cameroon', fr: 'Cameroun' },
 
@@ -169,9 +169,9 @@ const translations = {
 
   // ── EXPERIENCE PROJECT DESCRIPTIONS ──
   'exp.proj1.name': { en: '33 Export — Memory Foot', fr: '33 Export — Memory Foot' },
-  'exp.proj1.desc': { en: 'Interactive football memory game for Africa Cup of Nations', fr: 'Jeu de mémoire de football interactif pour la CAN' },
+  'exp.proj1.desc': { en: 'Built from scratch for AFCON Morocco', fr: 'Création complète pour la CAN au Maroc' },
   'exp.proj2.name': { en: 'My ENEO', fr: 'My ENEO' },
-  'exp.proj2.desc': { en: 'Full customer portal — billing, meter readings, outage reports', fr: 'Portail client complet — facturation, relevés, signalements de pannes' },
+  'exp.proj2.desc': { en: 'Functional testing, bug reporting and tracking', fr: 'Tests fonctionnels, signalement et suivi des anomalies' },
   'exp.proj3.name': { en: 'Port Authority of Douala', fr: 'Port Autonome de Douala' },
   'exp.proj3.desc': { en: 'Digital platform for port logistics and vessel tracking', fr: 'Plateforme numérique pour la logistique portuaire et le suivi des navires' },
 

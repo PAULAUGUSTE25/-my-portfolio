@@ -16,7 +16,7 @@ const Footer = () => {
           
           <div className="text-center">
             <p className="text-gray-600 dark:text-gray-400">
-              © {currentYear} <span className="font-semibold text-primary-600 dark:text-primary-400">Ndefo Paul Auguste</span>. All rights reserved.
+              © {currentYear} <span className="font-semibold text-primary-600 dark:text-primary-400">Ndefo Kuate Paul Auguste</span>. All rights reserved.
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">
               Full Stack Developer | React Specialist

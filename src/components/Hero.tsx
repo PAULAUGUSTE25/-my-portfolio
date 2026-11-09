@@ -18,7 +18,7 @@ const Hero = () => {
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 animate-slide-up">
             <span className="bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">
-              Ndefo Paul Auguste
+              Ndefo Kuate Paul Auguste
             </span>
           </h1>
 

@@ -206,7 +206,7 @@ const ContactSection = () => {
               <div className="grid grid-cols-3 gap-3">
                 {[
                   { icon: Github, label: 'GitHub', sub: '@PAULAUGUSTE25', href: 'https://github.com/PAULAUGUSTE25', color: '#242321' },
-                  { icon: Linkedin, label: 'LinkedIn', sub: 'NDEFO Paul Auguste', href: 'https://www.linkedin.com/in/ndefo-paul-auguste', color: '#898680' },
+                  { icon: Linkedin, label: 'LinkedIn', sub: 'NDEFO Kuate Paul Auguste', href: 'https://www.linkedin.com/in/ndefo-paul-auguste', color: '#898680' },
                   { icon: Mail, label: t('contact.email'), sub: 'ndefokuatepaulauguste@gmail.com', href: 'mailto:ndefokuatepaulauguste@gmail.com', color: '#6f6b64' },
                 ].map((s) => (
                   <motion.a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
