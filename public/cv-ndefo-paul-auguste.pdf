@@ -1,79 +1,74 @@
 %PDF-1.4
-%‚„œ”
+%ìåãû ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> /XObject << /QR 7 0 R >> >> /Contents 6 0 R >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
 endobj
 6 0 obj
-<< /Length 2899 >>
-stream
-0.141 0.137 0.129 rg 0 716 595 126 re f
-0.847 0.796 0.722 rg 44 716 5 126 re f
-1.000 1.000 1.000 rg BT /F2 25 Tf 1 0 0 1 68 785 Tm (NDEFO PAUL AUGUSTE) Tj ET
-0.900 0.870 0.810 rg BT /F2 11 Tf 1 0 0 1 69 759 Tm (D…VELOPPEUR FULL STACK  |  G…NIE LOGICIEL) Tj ET
-1.000 1.000 1.000 rg BT /F1 9.5 Tf 1 0 0 1 69 737 Tm (YaoundÈ, Cameroun  |  NÈ le 28/08/2000) Tj ET
-1.000 1.000 1.000 rg BT /F1 9 Tf 1 0 0 1 69 721 Tm ( +237 695 584 290  |  +237 654 773 746  |  sixcomp8@gmail.com) Tj ET
-0.900 0.870 0.810 rg BT /F2 7 Tf 1 0 0 1 480 824 Tm (SCANNEZ POUR VISITER) Tj ET
-q 76 0 0 76 484 741 cm /QR Do Q
-0.380 0.350 0.300 rg BT /F2 10 Tf 1 0 0 1 48 687 Tm (PROFIL) Tj ET
-0.840 0.800 0.730 RG 0.8 w 48 680 m 547 680 l S
-0.160 0.150 0.130 rg BT /F1 10 Tf 1 0 0 1 48 662 Tm (DÈveloppeur Full Stack et diplÙmÈ en gÈnie logiciel, spÈcialisÈ en React,) Tj ET
-0.160 0.150 0.130 rg BT /F1 10 Tf 1 0 0 1 48 647 Tm (TypeScript et JavaScript. ExpÈrience en dÈveloppement de produits numÈriques) Tj ET
-0.160 0.150 0.130 rg BT /F1 10 Tf 1 0 0 1 48 632 Tm (dans le cadre d'un stage chez Zen Africa, pour des organisations majeures.) Tj ET
-0.380 0.350 0.300 rg BT /F2 10 Tf 1 0 0 1 48 603 Tm (EXP…RIENCE PROFESSIONNELLE) Tj ET
-0.840 0.800 0.730 RG 0.8 w 48 596 m 547 596 l S
-0.160 0.150 0.130 rg BT /F2 11 Tf 1 0 0 1 48 578 Tm (DÈveloppeur Full Stack \(stage\)  |  Zen Africa) Tj ET
-0.430 0.410 0.370 rg BT /F1 9 Tf 1 0 0 1 48 562 Tm (2025 - 2026  |  Cameroun) Tj ET
-0.160 0.150 0.130 rg BT /F1 9.5 Tf 1 0 0 1 48 544 Tm (Contribution ‡ des projets web pour des clients institutionnels et privÈs :) Tj ET
-0.160 0.150 0.130 rg BT /F1 9.2 Tf 1 0 0 1 56 528 Tm (ï My ENEO : portail client pour la facturation, les relevÈs et les signalements.) Tj ET
-0.160 0.150 0.130 rg BT /F1 9.2 Tf 1 0 0 1 56 513 Tm (ï 33 Export : jeu de mÈmoire interactif sur le football pour la CAN.) Tj ET
-0.160 0.150 0.130 rg BT /F1 9.2 Tf 1 0 0 1 56 498 Tm (ï Port Autonome de Douala : plateforme pour la logistique et le suivi portuaire.) Tj ET
-0.380 0.350 0.300 rg BT /F2 10 Tf 1 0 0 1 48 468 Tm (FORMATION) Tj ET
-0.840 0.800 0.730 RG 0.8 w 48 461 m 547 461 l S
-0.160 0.150 0.130 rg BT /F2 10.5 Tf 1 0 0 1 48 443 Tm (Licence \(B.Sc.\) en gÈnie logiciel  |  ICT University) Tj ET
-0.430 0.410 0.370 rg BT /F1 9 Tf 1 0 0 1 48 427 Tm (DiplÙmÈ) Tj ET
-0.380 0.350 0.300 rg BT /F2 10 Tf 1 0 0 1 48 399 Tm (COMP…TENCES) Tj ET
-0.840 0.800 0.730 RG 0.8 w 48 392 m 547 392 l S
-0.160 0.150 0.130 rg BT /F1 9.5 Tf 1 0 0 1 48 374 Tm (React | TypeScript | JavaScript | Node.js | Tailwind CSS | Git / GitHub) Tj ET
-0.160 0.150 0.130 rg BT /F1 9.5 Tf 1 0 0 1 48 359 Tm (DÈveloppement Full Stack | APIs REST | Bases de donnÈes | Interfaces web) Tj ET
-0.380 0.350 0.300 rg BT /F2 10 Tf 1 0 0 1 48 329 Tm (LANGUES) Tj ET
-0.840 0.800 0.730 RG 0.8 w 48 322 m 547 322 l S
-0.160 0.150 0.130 rg BT /F1 9.5 Tf 1 0 0 1 48 304 Tm (FranÁais : courant  |  Anglais : courant) Tj ET
-endstream
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261109104140+01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261109104140+01'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
 endobj
 7 0 obj
-<< /Type /XObject /Subtype /Image /Width 392 /Height 392 /ColorSpace /DeviceGray /BitsPerComponent 8 /Filter /FlateDecode /Length 3837 >>
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1687
+>>
 stream
-xúÌëKrÂXCﬂ˛7≠ûVdò∆HU9›¿L∫$~|û¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(äøüÓOﬂTèÚQΩin“ΩÍ#≈VW}S= Gı¶πI˜™è[]ıMı(’õÊ&›´>Rlu’7’£|ToöõtØ˙H±’UﬂTèÚQΩin“ΩÍ#≈VW}S= Gı¶πI˜™è[]ıMı(’õÊ&›´>Rlu’7’£|ToöõtØ˙H·Ú®y’o⁄£À„Ó”|€˘+ûﬁa7≈”;ÏÊØxzá›¸OÔ∞õø‚ÈvÛW<Ω√n˛äßwÿÕSû?}“|äèÚO|W>‹;l˚†∏÷UÛ¥èi~ÎCÈ^˜Aq≠´Êi”¸÷á“ΩÓÉ‚ZWÕ”>¶˘≠•{›≈µÆöß}LÛ[J˜∫äk]5O˚òÊ∑>îÓu◊∫jûˆ1Õo}(›Î>(Æu’<Ìcöﬂ˙P∫◊}Plu©/ı_˘P{‘WöáÓßÿÍR_¥OıÎ3ÕC˜Slu©/⁄ß˙øıôÊ°˚)∂∫‘ÌS˝ﬂ˙LÛ–˝[]Íãˆ©˛o}¶yË~ä≠.ıE˚Tˇ∑>”<t?≈Vó˙¢}™ˇ[üi∫üb´K}—>’ˇ≠œ4›Oq•˚	·˙°˘›\◊}∏∏“˝Ñp˝–¸nÆÎ>\\È~B∏~h~7◊u.Æt?!\?4øõÎ∫W∫üÆöﬂÕu›áã+›O◊ÕÔÊ∫Ó√≈ïÓ'ÑÎáÊws]˜·‚J˜¬ıCÛªπÆ˚p·Ú∏˛ÈÌáÍ§zW}∏Ëzá˛Ôzáﬁ°w∏÷ÌvËzá˛Ô2®˛ˆÔ¥è[›ﬂ˙ùˆëb´˚[ø”>RluÎw⁄Gä≠Óo˝N˚H±’˝≠ﬂi)∂∫øı;Ì#≈V˜∑~ß}¸◊†~“&ıNuû_Çﬁ·g†w¯Ë~záüÅﬁ·g†w¯Ën·ˆBÛππ∑:Tó˙R˚œ1zÊG˝ﬂ¢w`~‘ˇ-zÊG˝ﬂ¢w`~‘ˇ-zÊG˝ﬂ¢w`~‘ˇ-zÊG˝w·ˆL˜∑†æØ˛+˝≠_ög‚U:üó@}_˝W˙[ø4œƒ´t>/Å˙æ˙ØÙ∑~iûâWÈ|^ı}ı_Èo˝“<Ø“˘ºÍ˚Íø“ﬂ˙•y&^•Ûy	‘˜’•øıKÛLºJÁÛ®Ô´ˇJÎóÊôxïŒÁ%PﬂWˇï˛÷ØõGÒNÛîá˛wÔA}_˘ÍæﬁÎzáﬁ°wP˘zΩCÊ´w¯zØwË.Ô@˚•>©ÂùxT/WÔ€<4ØÚG˚∫ÚMyhè€˜möW˘£}]˘¶<¥«Ì˚6Õ´¸—æÆ|S⁄„ˆ}õáÊU˛h_Wæ)Ìq˚æÕCÛ*¥Ø+ﬂîáˆ∏}ﬂÊ°yï?⁄◊ïo C{‹æoÛ–º ÌÎ 7Â°=nﬂ∑yh^≈ÁÊôr(ïü˙¶~]=:ÔBÂqs—º¥«‘7ıÎÍ—y*èõãÊ•=¶æ©_WèŒªPy‹\4/Ì1ıM˝∫ztﬁÖ „Ê¢yiè©oÍ◊’£Û.T7ÕK{L}SøÆùw°Ú∏πh^⁄cÍõ˙uıËºï«ÕEÛ“Sﬂ‘Ø´GÁ∑p{rﬂ]ˇÆµó˙¢∫WpsªÔÆo◊è⁄K}Q›+∏π›w◊∑ÎGÌ•æ®Ó‹‹ÓªÎ€ı£ˆR_T˜
-nn˜›ıÌ˙Q{©/™{7∑˚Ó˙v˝®Ω‘’ΩÇõ€}w}ª~‘^ÍãÍ^¡ÕÌæªæ]?j/ıEuSl˝´=•C˜ß9ïÀÌâÊO˘ïÆÎÉ˙W:tö£}∫}∏†¸J◊ıA˝+∫?Õ—>›>\P~•Î˙†˛ï›üÊhün.(ø“u}PˇJáÓOs¥O∑î_È∫>®•C˜ß9⁄ß€á Øt]‘ø“°˚”Ì”Ì√ÂW∫ÆÍ_È–˝iéˆÈˆ·ÇÚou)O™;Ò(?È˚‰W˘Q˛S(üT«ı£zS˛∂Ôì_ÂG˘O°|R◊èÍM˘€æO~ïÂ?ÖÚIu\?™7Âo˚>˘U~îˇ '’q˝®ﬁîøÌ˚‰W˘Q˛S(üT«ı£zS˛∂Ôì_ÂG˘O°|R◊èÍM˘€æO~ïÂ?ÖÚIu\?™7Âo˚>˘U~îˇ¥ö;ÂùﬁÈ<’s˚xñHui> ;Ω”y
-™ÁˆÒ,ëÍ“|îwzßÛTœÌ„Y"’•˘(ÔÙNÁ)®û€«≥D™KÛQﬁÈùŒSP=∑ègâTóÊ£º”;ùß†znœ©.ÕGyßw:OAı‹>û%R]öèÚNÔtûÇÍπ}<«Pæïˇ‘ßÍCÈ©9óÁ™ßΩCÔ–;¯¸ΩCÔ@Ê∑<W=•Ëzáﬁ¡ÁÔnÔ@˚KÔ„Íπ∫nÓîüﬁ¡Û•rπﬂΩ€£˙Ω√◊ˇ{Ê∑wËzáﬁa“Î<_*◊OπÉ¬ñ«Õ•ˆ“}óWÂ}é†rPΩ¥œt/›wyUﬁÁ*’K˚L˜“}óWÂ}é†rPΩ¥œt/›wyUﬁÁ*’K˚L˜“}óWÂ}é†rPΩ¥œt/›wyUﬁÁ*’K˚L˜“}óWÂ}é†rPΩ¥œt/›wyUﬁÁì?:Ørm˚ps(æ´;]˘V˙tæwËæÚ•¯záÔızáﬁa„´w¯⁄ó‚Îæ◊ÎzáüpW«ΩÌÖæß<[ˇœÀpu“WÔ)œ÷ˇÛ2\ù4«’{ ≥ıˇºW'ÕqıûÚl˝?/√’Is\Ωß<[ˇœÀpu“WÔ)œ÷ˇÛ2\ù4«’{ ≥ıˇºW'ÕqıûÚl˝€≈Ω—9öó˙•πïÔ´>î?’√V'ı3Ω´ˇtè˙Óæ~WˇÈı›;|˝Æ˛”=Íªw¯˙]˝ß{‘wÔıª˙O˜®Ôﬁ·ÎwıüÓQﬂΩ√◊ÔÍ?›˚ªÉÍÈ ˜ƒKÛQ^óœÕÌˆ¢ê˙§|™/µG˘]}ïOÂv{QH}R>’ó⁄£¸Ææ ßrªΩ(§>)üÍKÌQ~W_ÂSπ›^RüîOı•ˆ(ø´ØÚ©‹n/
-©O ß˙R{îﬂ’W˘Tn∑Ö‘'ÂS}©= ÔÍ´|*∑€ãBÍìÚ©æ‘ÂwıU>ï€ÌE!Õ£ÚM~”‹î_˘ﬂŒ]˘V>î?Í{ÚyùÁ™_:wÂ[˘P˛®Ô…Áuû´~È‹ïoÂC˘£æ'ü◊yÆ˙•sWæïÂè˙û|^ÁπÍóŒ]˘V>î?Í{ÚyùÁ™_:wÂ[˘P˛®Ô…Áuû´~È‹ïoÂC˘£æ'ü◊yÆ˙•sWæSjè˙•p˜&}öãŒ•Û.ﬂ÷«¥O˚T=“y∑/:óŒª|[”>ÌSıHÁ›æË\:ÔÚm}L˚¥O’#ùw˚¢sÈºÀ∑ı1Ì”>UètﬁÌãŒ•Û.ﬂ÷«¥O˚T=“y∑/:óŒª|[”>ÌSıHÁ›æË\:ÔÚm}L˚¥O’#ùw˚¢sÈ<ÂS:€<È◊'ÕÁ˙w}πËv|Ω√˜˚jœıÔ˙r—;Ï¯záÔ˜’ûÎﬂıÂ¢wÿÒıﬂÔ´=◊øÎÀEÔ≥Ó@˚•|Ó7›£˘Æro°|∫~hÔì~⁄/ùss—‹[(üÆ⁄˚§üˆKÁ‹\4˜ ßÎáˆ>Èß˝“97ÕΩÖÚÈ˙°ΩO˙iøtŒÕEso°|∫~hÔì~⁄/ùss—‹[(üÆ⁄˚§üˆKÁ‹\4˜ ßÎáˆ>Èß˝“97ÕΩÖ€ıù˙w˚Tﬂj.›øFvÖﬁ·ŸzákdWËÆë]°w∏FvÖﬁ·ŸzákdWËﬁÜÎCıæÕõÚ“{m{Î>Ω√˜∫Èúãﬁ·{›tŒEÔΩn:Á¢w¯^7ùs—;|ØõŒπËæ◊MÁ\ÙﬂÎ¶s[û?˝*ˇ€>›˛®•õÊwuïNÍÉÚNÛäw˙ﬁˆ·Ê∏“U:© ;Õ+ﬁÈ{€áõ„JWÈ§>(Ô4ØxßÔmné+]•ì˙†º”º‚ùæ∑}∏9ÆtïNÍÉÚNÛäw˙ﬁˆ·Ê∏“U:© ;Õ+ﬁÈ{€áõ„JWÈ§>(Ô4ØxßÔmné+]ÍÎ /’S{˛w˝∏˘Ë}w—;ÙΩÉÊÎzáØ|ıΩ—Ÿ¢wËz?'ıK{˛ØÚL˛®Ô+øÆoöKÂ§>ﬁŒ„]°wx+èwÖﬁ·≠<ﬁzá∑ÚxWËﬁ „]°wx+èwÖﬁ·≠<?Ì[–{Lﬂ˛ßΩ•˛\æÌ˚øÖﬁ°wH¸π|ΩCÔ‡†wË._Ô–;8ËnÓ	q≈C˘ïû;ß˛OﬂÆ>≈UO)ÂO{òÊ‘ˇÈ€’ß∏Í)Â°¸i”ú˙?}ª˙W=•<î?ÌaöSˇßoWü‚™ßîáÚß=LsÍˇÙÌÍS\ıîÚP˛¥áiN˝üæ]}ä´ûR üˆ0Õ©ˇ”∑´Oq’S C˘”¶9ı˙vı)\ÍSΩ_˚ß=”˜kü
-ΩCÔ–;‰:Ω√;Ëzáﬁ!◊ÈﬁAÔ3Ôß?’˚4ÔŒπ>¶◊{”æ‚u·ÊßÛÓúÎ√Ì3›õˆØ7?ùwÁ\nüÈﬁ¥Øx]∏˘Èº;Á˙p˚L˜¶}≈Î¬ÕOÁ›9◊á€g∫7Ì+^n~:ÔŒπ>‹>”Ωi_Ò∫pÛ”ywŒı·ˆôÓM˚ä◊ÖõüŒªsÆ∑œto⁄Wº.‹¸‘ó;Gu©é“UºÓª“w˝—>(O™ßÊ‹∂=”<)h/4O:Gu©é“UºÓª“w˝—>(O™ßÊ‹∂=”<)h/4O:Gu©é“UºÓª“w˝—>(O™ßÊ‹∂=”<)h/4O:Gu©é“UºÓª“w˝—>(O™ßÊ‹∂=”<)h/j˛ﬂÓYı„Ê¶¸‘ﬂ÷ÌÀ˝¶º4Á4üÊ¶¸‘ﬂ÷ÌÀ˝¶º4Á4üÊ¶¸‘ﬂ÷ÌÀ˝¶º4Á4üÊ¶¸‘ﬂ÷ÌÀ˝¶º4Á4üÊ¶¸‘ﬂ÷ÌÀ˝¶º4Á4üÊ¶¸‘ﬂ÷ÌÀ˝¶º4Á4üÊ¶¸‘ﬂ÷ÌÀ˝¶º4Á4üÊ¶¸‘ﬂµ:Ôˆ∑›ßÔn/W˝ß|Ω{w—;Ùõ˝ﬁ°w Ô.záﬁa≥ﬂ;Ù‰›≈ïÔ+ˇæªΩ©˝´‹¥ä≠’„ˆùÍª}ms”>(∂~Tè€w™ÔˆµÕM˚†ÿ˙Q=nﬂ©æ€◊67ÌÉbÎGı∏}ß˙n_€‹¥ä≠’„ˆùÍª}ms”>(∂~Tè€w™ÔˆµÕM˚†ÿ˙Q=nﬂ©æ€◊67Ì£(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä¢(ä‚˘K?0ÆT¡
-endstream
+Gb!#[>uTK;'Rf.GSB%k'\sDDQSi-_L9+)mhAnQ>.0<2,W'jD$N:!64[r/PU!I$G=fRTUKI!F)hS\bFm+NsK"#+PeoYJGg1#-No)H?%@0[L\(jD\oYFB&<Do,J4!F0I3/rmYt$4dE_!r76t1oa)ShD^LPC6X8t@(58I-QFpgqM94l;5D354]K&V]7jU$Kbmq_t"!Nc0-$DmnFsDf?;5/9XQX6%-d$,U,c0%&S_\BRFK=,;A.pM,Cm$lUE"l6&>%Q]1>.2rPcM9j3Hc3qH\R6\<I.2@Gj42o0)0bO6PI$iki$K^R\1t@_kt"U)co<P0""oS;kr"ZdIG<7VD28k%SiH_tR%'mTgNMF"`9cr#c=`*7k'N6G[K:/.R9ANuDFiOGru<V#ZLjFiHc!J@_o<#N[VA>?0<%6]?::N,I/M&6\ca+f9G_dU#u;>)=/Epm&,r!Fd.""HOaMnSN^'pCN'e+hXHqO]5SOfRpL*^Tcs0n[@M,npaltVbXCq%<tb4Y^fWplamOV3<"-<jc1#K7%Mti,M.P]KiZ<D!PDk7f8DtNdYNIc2lcoQ!bnpIZq)Prdad2^G'Yo(4G*N&k4?KSkqkDHSm)c:GG.qJ#As["=s+SH9SjiT5X6`b'AY!phBqVa#T%3+5t8^&#<$j/U=?6/BFP_o=e]eYIXufV+6AZPdT3)=3#+PoL.JLL@\+OLC*4G-k?#=rcWO2Wg#**o!jXsY'5];UY8r!8KusQ+Y%h04`>uCP:^pB.oueslJO7jg)-sVTWF%oFL&\onP!<Rs,NSJNR?!L.!^#,/Es3i#bMgE:gcI[XJYFJl;=dO[fjN\+V<$'\C_u!u[nmnnN6F;f!HkB6;&W8t#2/G9OT#%[rGshQj/.sL>k(9uKoC:08rd/CV9#-4."t^E1:;U8FgZC`:Tj%Qp#7H)<)UiLadDN8q_e8:;j![[PFmcX-0>HkJ)O"ONQ</J,FKl+a9FG;)V^AF;@:rb]@_b@Hu'2S6W"+GU2F]s[*%bV--@,q/p1qtqfN0I#h@"Mbe*O8e8hO5fuHH:W*=Nn;.PnhY&qWU.I%.H(t>[mEE\X?&IWHUgHb][6Hn=rKG[)IFeqfB,s9m'GEL#Ecu`^<Fg\Mbd'_kHnQE4Y(6pf0QtY<KD.G*]I[k1Ph[&2<60Vj\N3R8%[RX1eD->Z$UkdosG$EP=#05N_4PS[;4G:A)l1[A5kEmQno<'moT*Of'FF.#:r(1rLF)rKCm+n-?X]aiNYm?u(<\Iuf`]US>$h&>j3Ne.Q48lhmY4i9ndH'B\Ga'8@9JIHH%dYT*55]Z6_;t1>(<t6hbWG\E'UE$3QNF!ib$9f:)5SJda!o;u]Fq*-c1U3R^L*$d(\PC[Jl-O,<A"UuM(;G@N/L-.^rq[4N]T%\=t_[%RZ)`g=tsj?/m&[%;%6b^q,5^cN\([C`#!8CC]Q`j`PXd?G_hJc[O!k"9Q_MKch.huQfT$_$B40>+_K?N\Q53_k^L3_ml7PCfq[6ZK.bV9\NMDN]-XAs4<5Wt.Mo.'.#J4,=mn_DB'gXSHV9_0cUEgHim[%k[oqnk]XB^ngbj5$W-H>[TJ<b?*T*d8X#>aJc%80brh>Tfn'1R?j3aH=@\Uk@7dOhIoJO"4d91dabV>Q_L[!L.-Ja5jZTFu6%_=Omb'Lkk]P1.Mb+9qAK6O/'e!d1^"EsbF+`5#F~>endstream
 endobj
 xref
-0 8
+0 9
 0000000000 65535 f 
-0000000015 00000 n 
-0000000064 00000 n 
-0000000121 00000 n 
-0000000282 00000 n 
-0000000379 00000 n 
-0000000481 00000 n 
-0000003432 00000 n 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000524 00000 n 
+0000000592 00000 n 
+0000000872 00000 n 
+0000000931 00000 n 
 trailer
-<< /Size 8 /Root 1 0 R >>
+<<
+/ID 
+[<70707d896336d55cea65a568a7b4df81><70707d896336d55cea65a568a7b4df81>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
 startxref
-7440
+2709
 %%EOF
